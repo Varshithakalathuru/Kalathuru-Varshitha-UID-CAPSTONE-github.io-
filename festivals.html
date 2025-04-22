@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Festivals</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;         
+            gap: 40px; 
+            background-color:#F6E1E3;
+        }
+        .b {
+            text-align: center;            
+            width: 60%;        
+           }
+        .b img {
+            width: 70%;
+            height: auto;
+            display: block;            
+            margin: 0 auto; 
+        }
+        .b-c {
+            padding: 15px;
+        }
+        .b-t {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+        .b-d {
+            font-size: 20px;
+            color: #555;
+            margin: 0 0 15px;
+        }
+        
+           .whatsapp-btn {
+            position: fixed;
+            left: 10px; 
+            bottom: 20px; 
+            background-color: #25D366; 
+            color: white;
+            border: none;
+            border-radius: 50%; 
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp-btn img {
+            width: 30px;
+            height: 30px;
+        }
+        .qr-code {
+            position: fixed;
+            left: 70px; 
+            bottom: 30px;
+            display: none; 
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .qr-code img {
+            width: 150px;
+            height: auto;
+        }
+        
+        .whatsapp-btn:hover + .qr-code 
+        {
+            display: block;        
+        }
+         footer {
+            background-color: black;
+            color: white;
+            text-align: bottom;
+            padding: 20px;
+            
+            margin-top: auto;
+
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #D4AF37;
+        }
+         /* Media Query for Responsive Design */
+        @media (max-width: 768px) {
+            .button {
+                padding: 10px 20px;
+                font-size: 16px;
+                transform: translate(-50%, 0); /* Adjust the button's position for phones */
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <div><h1>This all are our services:</h1></div>
+    <div class="container">
+        <div class="b">
+            <img src="f1.png" alt="Wedding Ceremony" width="200" height="100">
+            <div class="b-c">
+                <div class="b-t">Vinayaka Chavithi</div>
+                <div class="b-d">🙏Vinayaka Chavithi, also called Ganesh Chaturthi, is a Hindu festival celebrating the birth of Lord Ganesha, the deity of wisdom, prosperity, and the remover of obstacles. It involves installing Ganesha idols at homes and public spaces, accompanied by prayers, hymns, and offerings like modaks, which are considered his favorite sweets. The festival spans 10 days, ending with the immersion of the idols in water, symbolizing Ganesha's departure and blessings for the year ahead. It's a vibrant and joyous occasion filled with devotion and festivity.</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="f2.png" alt="Birthday Party">
+            <div class="b-c">
+                <div class="b-t">Ugadi</div>
+                <div class="b-d">🙏Ugadi, also known as Yugadi, marks the New Year in the Hindu lunisolar calendar, celebrated predominantly in Andhra Pradesh, Telangana, and Karnataka. It signifies the arrival of spring and a fresh start, with rituals including house cleaning, decorating entrances with mango leaves, and preparing special dishes like Ugadi Pachadi, a symbolic mix of six tastes representing life's emotions. The day begins with prayers, temple visits, and cultural activities, embodying renewal, prosperity, and joy.</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="f3.png" alt="DJ Party">
+            <div class="b-c">
+                <div class="b-t">Maha Shivaratri</div>
+                <div class="b-d">🙏Maha Shivaratri, meaning "The Great Night of Lord Shiva," is a Hindu festival celebrated in honor of Lord Shiva. It typically falls in late winter, during the month of Phalguna or Maagha, and is observed with prayers, fasting, and night-long vigils. Devotees visit Shiva temples, chant hymns like "Om Namah Shivaya," and offer bel leaves, milk, and fruits to the Shiva Linga. The festival signifies the triumph of light over darkness and ignorance, with many observing it as a time for spiritual reflection and seeking blessings for inner peace and strength.</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="f4.png" alt="House Warming">
+            <div class="b-c">
+                <div class="b-t">Diwali</div>
+                <div class="b-d">Diwali, also known as the Festival of Lights, is a major Hindu festival symbolizing the victory of light over darkness and good over evil. It is celebrated with the lighting of oil lamps (diyas), decorating homes with rangoli, bursting fireworks, and exchanging gifts and sweets. The festival commemorates the return of Lord Rama to Ayodhya after 14 years of exile and his victory over Ravana, as described in the Ramayana. Diwali is a time for family gatherings, prayers to Goddess Lakshmi for prosperity, and spreading joy and positivity.</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="f5.png" alt="Office Party">
+            <div class="b-c">
+                <div class="b-t">Krishna Janmashtami</div>
+                <div class="b-d">Krishna Janmashtami, also known as Gokulashtami, celebrates the birth of Lord Krishna, the eighth incarnation of Lord Vishnu. It is observed on the eighth day (Ashtami) of the Krishna Paksha in the Hindu month of Shravana. Devotees honor the occasion with fasting, devotional singing, and reenactments of Krishna's life events. Children often dress as Krishna, and events like "Dahi Handi" symbolize Krishna's playful and mischievous nature. The festival is a time for prayer, joy, and devotion, reflecting Krishna's teachings and divine grace.</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="f6.png" alt="Gender Reveal">
+            <div class="b-c">
+                <div class="b-t">Sri Rama Navami</div>
+                <div class="b-d">Sri Rama Navami is a Hindu festival celebrating the birth of Lord Rama, the seventh incarnation of Lord Vishnu. It is observed on the ninth day (Navami) of the Chaitra month in the Hindu calendar, which typically falls in March or April. Devotees honor the occasion by performing special prayers, reading the Ramayana, and visiting temples dedicated to Lord Rama. The day is marked by spiritual activities, fasting, processions, and festive meals, reflecting devotion to Rama's virtues of righteousness and compassion.
+
+</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="f7.png" alt="Gender Reveal">
+            <div class="b-c">
+                <div class="b-t">Holi</div>
+                <div class="b-d">about holi
+Holi, known as the Festival of Colors, is a vibrant and joyful Hindu festival celebrated across India and beyond. It marks the arrival of spring and the triumph of good over evil, commemorating the legend of Prahlada and the burning of Holika. The festivities include smearing colorful powders (gulal) on friends and family, singing, dancing, and indulging in festive foods like gujiyas and thandai. Holi promotes unity, love, and togetherness, making it a cherished celebration of life and happiness.</div>
+            </div>
+        </div>
+            <div class="b">
+            <img src="f8.png" alt="Gender Reveal">
+            <div class="b-c">
+                <div class="b-t">Onam</div>
+                <div class="b-d">Onam is a vibrant harvest festival celebrated in Kerala, marking the homecoming of the legendary King Mahabali. It falls in the Malayalam month of Chingam, typically between August and September. The festival lasts ten days and includes grand feasts called Onasadya, intricate floral designs (Pookalam), traditional dances like Thiruvathira, and exciting boat races (Vallamkali). Onam embodies unity, prosperity, and cultural pride, making it one of Kerala's most cherished celebrations.
+
+</div>
+            </div>
+        </div>
+             <div class="b">
+            <img src="f9.png" alt="Gender Reveal">
+            <div class="b-c">
+                <div class="b-t">Dasara</div>
+                <div class="b-d">Dasara, also known as Vijayadashami, is a significant Hindu festival that celebrates the victory of good over evil. It marks the triumph of Lord Rama over Ravana and, in some regions, the slaying of the demon Mahishasura by Goddess Durga. The festival spans ten days, with the first nine days dedicated to Navratri, honoring the divine feminine energy. Dasara is celebrated with grand processions, vibrant cultural performances, and the burning of effigies of Ravana in many places. It symbolizes the triumph of righteousness and the renewal of hope and joy.</div>
+            </div>
+        </div>
+              <div class="b">
+            <img src="f10.png" alt="Gender Reveal">
+            <div class="b-c">
+                <div class="b-t">Pongal</div>
+                <div class="b-d">Pongal is a traditional harvest festival celebrated in Tamil Nadu, marking the gratitude towards nature and the Sun God for a bountiful harvest. It spans four days, typically in mid-January, and includes Bhogi, Thai Pongal, Mattu Pongal, and Kaanum Pongal. Families prepare a special dish called Pongal using newly harvested rice, jaggery, and milk, offered to the Sun God as a gesture of thanksgiving. The festival is characterized by colorful kolams (rangoli), festive gatherings, and a spirit of joy and abundance.</div>
+            </div>
+        </div>
+    </div>
+<a  class="whatsapp-btn" >
+        <img src="whatsapp-icon.png" alt="WhatsApp Icon">
+    </a>
+
+        <div class="qr-code">
+        <img src="qr-code.jpg" alt="Scan to Contact on WhatsApp">
+    </div>
+     <footer>
+      <div style="text-align:center">
+       <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook" style="width: 30px; height: 30px; margin-right: 10px;">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="insta.png" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="twitter.png" alt="Twitter" style="width: 30px; height: 30px; margin-right: 10px;">
+        </a>
+        <p>U can also contact us through the above social media apps</p>
+        <p>Designed by@ ~Kalathuru Varshitha</p>
+       </div>
+    </footer>
+
+</body>
+</html>

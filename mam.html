@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bliss Craft - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F5DC;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: black;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        header button {
+            margin-left: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #D4AF37;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+        header button:hover {
+            background-color: #FFD700;
+            box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+        }
+
+        main {
+            text-align: center;
+            padding: 50px;
+        }
+
+        main h1 {
+            font-size: 36px;
+            color: black;
+        }
+
+        main p {
+            font-size: 20px;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
+        }
+
+        .service {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .service h3 {
+            font-size: 24px;
+            margin: 15px 0;
+            color: black;
+        }
+
+        .service p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .service button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .service button:hover {
+            background-color: #D4AF37;
+            box-shadow: 0 0 10px #D4AF37, 0 0 20px #D4AF37;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a img:hover {
+            filter: drop-shadow(0 0 10px #FFD700);
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="App Logo">
+    </header>
+    <main>
+        <h1>Welcome to Bliss Craft</h1>
+        <p>Your ultimate destination for exceptional event management services. We turn your moments into memories!</p>
+    </main>
+    <div class="services">
+        <!-- Event blocks -->
+        <div class="service">
+            <img src="image1.png" alt="Wedding Ceremony">
+            <h3>Wedding Ceremony</h3>
+            <p>"Celebrate love with elegance and style."</p>
+            <button onclick="window.location.href='marrage.html'">Explore</button>
+        </div>
+        <div class="service">
+            <img src="image2.png" alt="Birthday Party">
+            <h3>Birthday Party</h3>
+            <p>"Make each birthday unforgettable."</p>
+            <button onclick="window.location.href='birthday.html'">Explore</button>
+        </div>
+        <div class="service">
+            <img src="image3.png" alt="DJ Party">
+            <h3>DJ Party</h3>
+            <p>"Dance the night away in style."</p>
+            <button onclick="window.location.href='dj.html'">Explore</button>
+        </div>
+        <div class="service">
+            <img src="image4.png" alt="Wedding Ceremony">
+            <h3>Wedding Ceremony</h3>
+            <p>"Celebrate love with elegance and style."</p>
+            <button onclick="window.location.href='hw.html'">Explore</button>
+        </div>
+        <div class="service">
+            <img src="image5.png" alt="Wedding Ceremony">
+            <h3>Wedding Ceremony</h3>
+            <p>"Celebrate love with elegance and style."</p>
+            <button onclick="window.location.href='office.html'">Explore</button>
+        </div>
+        <div class="service">
+            <img src="image6.png" alt="Wedding Ceremony">
+            <h3>Wedding Ceremony</h3>
+            <p>"Celebrate love with elegance and style."</p>
+            <button onclick="window.location.href='gender.html'">Explore</button>
+        </div>
+        <div class="service">
+            <img src="image7.png" alt="Wedding Ceremony">
+            <h3>Wedding Ceremony</h3>
+            <p>"Celebrate love with elegance and style."</p>
+            <button onclick="window.location.href='festivals.html'">Explore</button>
+        </div>
+
+
+
+
+    </div>
+    <footer>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="insta.png" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="twitter.png" alt="Twitter" style="width: 30px; height: 30px;">
+        </a>
+        <p>Contact us through the above social media platforms</p>
+        <p>Designed by ~ Kalathuru Varshitha</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Bliss Craft</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: none;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #D4AF37;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            position: absolute;
+            bottom:300px;
+            left:250px;
+            }
+
+        .button:hover {
+            background-color: black;
+            box-shadow: 0 0 10px #D4AF37, 0 0 20px #D4AF37, 0 0 30px #D4AF37;
+        } 
+        @media only screen and(min-width:10px)
+        {
+           <video autoplay muted loop width="150px" height="100px">
+        <source src="homes.mp4" type="video/mp4">        
+           </video>
+        }   
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="homes.mp4" type="video/mp4">
+    </video>
+    <a href="file:///C:/Users/VARSHITHA/Desktop/Varshitha/Uid/last.html">
+        <button class="button"><i>Know more</i></button>
+    </a>
+</body>
+</html>

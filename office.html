@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Office Party</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background-color: #ffe4e1;
+            padding: 20px;
+            border-radius: 50px;
+        }
+        .decorations {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .decorations img {
+            width: 300px;
+            height: 300px;
+            border-radius: 70%;
+        }
+        .para
+         {
+           position: fixed;
+           bottom: 10%;
+          width: 80%;
+          text-align: center;
+          background-color: #f9f9f9;     padding: 10px;
+           box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+         }
+  .whatsapp-btn {
+            position: fixed;
+            left: 10px; 
+            bottom: 20px; 
+            background-color: #25D366; 
+            color: white;
+            border: none;
+            border-radius: 50%; 
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp-btn img {
+            width: 30px;
+            height: 30px;
+        }
+        .qr-code {
+            position: fixed;
+            left: 70px; 
+            bottom: 30px;
+            display: none; 
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .qr-code img {
+            width: 150px;
+            height: auto;
+        }
+        
+        .whatsapp-btn:hover + .qr-code 
+        {
+            display: block;        
+        }
+         /* Media Query for Responsive Design */
+        @media (max-width: 768px) {
+            .button {
+                padding: 10px 20px;
+                font-size: 16px;
+                transform: translate(-50%, 0); /* Adjust the button's position for phones */
+            }
+
+
+      </style>
+</head>
+<body>
+        <div class="container">
+        <section class="hero">
+            <h2>It's Party Time</h2>
+            <p>"Work hard, party harder – because life is about balance!✌️"</p>
+       
+        <section class="decorations">
+            <div>
+                <img src="of1.png" alt="Balloons">
+                <p>Celebrations</p>
+            </div>
+            <div>
+                <img src="of2.png" alt="Cake">
+                <p>Decorations</p>
+            </div>
+            <div>
+                <img src="of3.png" alt="Lights">
+                <p>Catering Services</p>
+            </div>
+          <div class="para"><p>Office parties are an excellent way to foster team bonding, celebrate achievements, and boost morale within the workplace. These gatherings can vary in scale, from small informal meetups to elaborate celebrations, depending on the occasion and company culture. They often serve to mark milestones such as project completions, promotions, anniversaries, or seasonal events like year-end celebrations and festivals. Planning an office party involves setting a budget, selecting a suitable venue (either on-site or off-site), and deciding on a theme, which could range from a retro night to a simple casual get-together. Activities such as icebreakers, games, or even karaoke can add a fun element to the event. Providing diverse food and beverage options is crucial, ensuring inclusivity by accommodating dietary restrictions and offering non-alcoholic drinks. Entertainment like live music, DJs, or even photo booths can elevate the party experience, while recognizing employees’ contributions through awards or shout-outs makes the event more meaningful. While it’s important to enjoy the festivities, maintaining a sense of professionalism is essential, as it is still a workplace event. Office parties, when organized thoughtfully, can leave lasting, positive impressions on employees and strengthen team dynamics.</p></div>
+    </div>
+ <a class="whatsapp-btn" >
+        <img src="whatsapp-icon.png" alt="WhatsApp Icon">
+    </a>
+
+        <div class="qr-code">
+        <img src="qr-code.jpg" alt="Scan to Contact on WhatsApp">
+    </div> 
+</body>
+</html>

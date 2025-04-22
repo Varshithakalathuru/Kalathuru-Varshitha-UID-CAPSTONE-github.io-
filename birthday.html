@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Birthday - Floating Lanterns</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F6E1E3;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;         
+            gap: 40px; 
+        }
+
+        /* Card Styling */
+        .b {
+            text-align: center;            
+            width: 60%;        
+            animation: fadeIn 1s ease-in-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Card Hover Effect */
+        .b:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Card Image */
+        .b img {
+            width: 70%;
+            height: auto;
+            display: block;            
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        .b img:hover {
+            transform: scale(1.1); /* Zoom-in effect */
+        }
+
+        .b-c {
+            padding: 15px;
+        }
+
+        .b-t {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+
+        .b-d {
+            font-size: 20px;
+            color: #555;
+            margin: 0 0 15px;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating Lantern/Orb Effect */
+        .lantern {
+            position: fixed; /* Lanterns stay fixed regardless of scrolling */
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, rgba(255, 223, 186, 0.8) 0%, rgba(255, 182, 193, 0.4) 80%);
+            border-radius: 50%;
+            animation: float 8s linear infinite, glow 2s infinite alternate;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            from {
+                transform: translateY(-100px) translateX(0px);
+            }
+            to {
+                transform: translateY(100vh) translateX(50px);
+            }
+        }
+
+        /* Glowing Effect */
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 5px rgba(255, 223, 186, 0.8);
+            }
+            100% {
+                box-shadow: 0 0 15px rgba(255, 182, 193, 1);
+            }
+        }
+
+        /* WhatsApp Button Styling */
+        .whatsapp-btn {
+            position: fixed;
+            left: 10px; 
+            bottom: 20px; 
+            background-color: #25D366; 
+            color: white;
+            border: none;
+            border-radius: 50%; 
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        .whatsapp-btn img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* QR Code Styling */
+        .qr-code {
+            position: fixed;
+            left: 70px; 
+            bottom: 30px;
+            display: none; 
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .qr-code img {
+            width: 150px;
+            height: auto;
+        }
+
+        .whatsapp-btn:hover + .qr-code { 
+            display: block;        
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        footer a:hover {
+            color: #D4AF37;
+        }
+
+        /* Floating Animation for Icons */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+         /* Media Query for Responsive Design */
+        @media (max-width: 768px) {
+            .button {
+                padding: 10px 20px;
+                font-size: 16px;
+                transform: translate(-50%, 0); /* Adjust the button's position for phones */
+            }
+
+    </style>
+</head>
+<body>
+    <div><h1 style="text-align:center;">These Are Our Birthday Services:</h1></div>
+    <div class="container">
+        <div class="b">
+            <img src="1sta.png" alt="Decorations">
+            <div class="b-c">
+                <div class="b-t">Decorations</div>
+                <div class="b-d">Celebrating a birthday is a joyful occasion to honor someone's life and create cherished memories...</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="2ndb.png" alt="Cakes">
+            <div class="b-c">
+                <div class="b-t">Cakes</div>
+                <div class="b-d">A birthday cake holds a special place in any celebration as it symbolizes joy, gratitude, and the sweetness of life...</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="3rdc.png" alt="Catering">
+            <div class="b-c">
+                <div class="b-t">Catering</div>
+                <div class="b-d">Food is a vital part of any birthday party, as it enhances the overall experience and brings guests together...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Lanterns Effect -->
+    <div id="floating-lanterns"></div>
+
+    <a  class="whatsapp-btn">
+        <img src="whatsapp-icon.png" alt="WhatsApp Icon">
+    </a>
+    <div class="qr-code">
+        <img src="qr-code.jpg" alt="Scan QR Code">
+    </div>
+
+    <footer>
+        <div style="text-align:center">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook.png" alt="Facebook" style="width: 30px; height: 30px; margin-right: 10px;">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="insta.png" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter" style="width: 30px; height: 30px; margin-right: 10px;">
+            </a>
+            <p>You can also contact us through the above social media apps</p>
+            <p>Designed by @Kalathuru Varshitha</p>
+        </div>
+    </footer>
+
+    </body>
+</html>

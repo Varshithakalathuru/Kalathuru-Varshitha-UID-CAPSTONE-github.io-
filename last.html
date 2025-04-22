@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bliss Craft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F5DC;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: black;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        header form {
+            display: flex;
+            align-items: center;
+        }
+
+        header input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 500px;
+            margin-right: 10px;
+        }
+
+        header button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #0D0D0D;
+            color: white;
+            cursor: pointer;
+        }
+
+        header button:hover {
+            background-color: #D4AF37;
+            box-shadow: 0 0 10px #D4AF37, 0 0 20px #D4AF37;
+        }
+
+        .scroll-container {
+            padding: 20px;
+        }
+
+        .scroll-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .b {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .b img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .b img:hover {
+            transform: scale(1.05);
+        }
+
+        .b-c {
+            padding: 15px;
+        }
+
+        .b-t {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+
+        .b-d {
+            font-size: 14px;
+            color: #555;
+            margin: 0 0 15px;
+        }
+                 .b-m
+{
+  font-size:20px;
+}
+
+        .b button {
+            background-color: #0D0D0D;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .b button:hover {
+            background-color: #D4AF37;
+            box-shadow: 0 0 10px #D4AF37, 0 0 20px #D4AF37;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a img:hover {
+            filter: drop-shadow(0 0 10px #FFD700);
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+
+        /* Media Query for Responsive Design */
+        @media (max-width: 768px) {
+            .button {
+                padding: 10px 20px;
+                font-size: 16px;
+                            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="App Logo">
+        <div style="display: flex; align-items: center;">
+     
+        <button onclick="window.location.href='file:///C:/Users/VARSHITHA/Desktop/Uid/mam.html'" style="margin-left: 20px; padding: 10px 20px; border-radius: 5px; background-color: #D4AF37; color: black; border: none; cursor: pointer;">Home</button>
+        <button onclick="window.location.href='file:///C:/Users/VARSHITHA/Desktop/Uid/website.html'" style="margin-left: 10px; padding: 10px 20px; border-radius: 5px; background-color: #D4AF37; color: black; border: none; cursor: pointer;">Login</button>
+        <button onclick="window.location.href='file:///C:/Users/VARSHITHA/Desktop/Uid/review.html'" style="margin-left: 10px; padding: 10px 20px; border-radius: 5px; background-color: #D4AF37; color: black; border: none; cursor: pointer;">About us</button>
+    </div>
+
+
+        <form>
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <hr>
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <!-- Event blocks -->
+            <div class="b">
+                <img src="image1.png" alt="Wedding Ceremony">
+                <div class="b-c">
+                    <div class="b-t">Wedding Ceremony</div>
+                    <div class="b-d">"The greatest marriages are built on teamwork, respect, and love."</div>
+                     <div class="b-m"><b>From 1000$-20000$</b> </div>
+
+                    <button onclick="window.location.href='marrage.html'">More</button>
+                </div>
+            </div>
+            <div class="b">
+                <img src="image2.png" alt="Birthday Party">
+                <div class="b-c">
+                    <div class="b-t">Birthday Party</div>
+                    <div class="b-d">"A birthday is not the end of another year but the start of a new one."</div>
+                    
+                     <div class="b-m"><b>From 100$-200$</b> </div>
+
+
+                    <button onclick="window.location.href='birthday.html'">More</button>
+                </div>
+            </div>
+            <div class="b">
+                <img src="image3.png" alt="DJ Party">
+                <div class="b-c">
+                    <div class="b-t">DJ Party</div>
+                    <div class="b-d">"Life is a song, and love is the music!"</div>
+                    
+                     <div class="b-m"><b>From 1000$-20000$</b> </div>
+
+
+                    <button onclick="window.location.href='dj.html'">More</button>
+                </div>
+            </div>
+            <div class="b">
+                <img src="image4.png" alt="House Warming">
+                <div class="b-c">
+                    <div class="b-t">House Warming Ceremony</div>
+                    <div class="b-d">"Home is where love resides and laughter never ends."</div>
+                    
+                     <div class="b-m"><b>From 100$-300$</b> </div>
+
+
+                    <button onclick="window.location.href='hw.html'">More</button>
+                </div>
+            </div>
+            <div class="b">
+                <img src="image5.png" alt="Office Party">
+                <div class="b-c">
+                    <div class="b-t">Office Party</div>
+                    <div class="b-d">"Working together is success, celebrating it is a joy!"</div>
+                    
+                     <div class="b-m"><b>From 100$-300$</b> </div>
+
+
+                    <button onclick="window.location.href='office.html'">More</button>
+                </div>
+            </div>
+            <div class="b">
+                <img src="image6.png" alt="Gender Reveal">
+                <div class="b-c">
+                    <div class="b-t">Gender Reveal</div>
+                    <div class="b-d">"We're bursting with excitement to find out little man or miss!"</div>
+                    
+                     <div class="b-m"><b>From 100$-400$</b> </div>
+
+
+                    <button onclick="window.location.href='gender.html'">More</button>
+                </div>
+            </div>
+            <div class="b">
+                <img src="image7.png" alt="Festivals Organization">
+                <div class="b-c">
+                    <div class="b-t">Festivals Organization</div>
+                    <div class="b-d">"Celebrating the richness of our traditions."</div>
+                    
+                     <div class="b-m"><b>From 100$-800$</b> </div>
+
+
+                    <button onclick="window.location.href='festivals.html'">More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="insta.png" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="twitter.png" alt="Twitter" style="width: 30px; height: 30px;">
+        </a>
+        <p>Contact us through the above social media platforms</p>
+        <p>Designed by ~ Kalathuru Varshitha</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.querySelector('header input'); // Search input field
+            const searchButton = document.querySelector('header button'); // Search button
+
+            // Mapping search keywords to corresponding pages
+            const pageMap = {
+                'wedding ceremony': 'marrage.html',
+                'birthday party': 'birthday.html',
+                'dj party': 'dj.html',
+                'house warming': 'hw.html',
+                'office party': 'office.html',
+                'gender reveal': 'gender.html',
+                'festivals organization': 'festivals.html'
+            };
+
+            searchButton.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent form submission default behavior
+                const query = searchInput.value.toLowerCase().trim(); // Get user input and trim whitespace
+                if (pageMap[query]) {
+                    window.location.href = pageMap[query]; // Redirect to the corresponding page
+                } else {
+                    alert('No matching page found! Please refine your search.'); // Notify user of no matches
+                }
+            });
+        });
+    </script>
+</body>
+</html>

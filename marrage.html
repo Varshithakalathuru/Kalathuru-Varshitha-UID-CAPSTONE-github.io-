@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Wedding Services</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            background-color: #F6E1E3;
+            padding: 20px 0;
+        }
+
+        .b {
+            text-align: center;
+            width: 60%;
+            animation: fadeIn 1s ease-in-out;
+            transition: box-shadow 0.3s;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .b:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .b img {
+            width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .b img:hover {
+            transform: scale(1.1);
+        }
+
+        .b-c {
+            padding: 15px;
+        }
+
+        .b-t {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+
+        .b-d {
+            font-size: 20px;
+            color: #555;
+            margin: 0 0 15px;
+        }
+
+
+        /* Footer Styling */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        footer a:hover img {
+            transform: scale(1.2);
+            filter: brightness(1.5);
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating Animation for Icons */
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* WhatsApp Button Styling */
+        .whatsapp-btn {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+            }
+            to {
+                box-shadow: 0 0 20px #25D366, 0 0 30px #25D366;
+            }
+        }
+
+        .whatsapp-btn img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* QR Code Styling */
+        .qr-code {
+            position: fixed;
+            left: 70px;
+            bottom: 30px;
+            display: none;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .qr-code img {
+            width: 150px;
+            height: auto;
+        }
+
+        .whatsapp-btn:hover + .qr-code {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div><h1 style="text-align:center;">These Are Our Services:</h1></div>
+    <div class="container">
+        <div class="b">
+            <img src="1st.png" alt="Wedding Ceremony">
+            <div class="b-c">
+                <div class="b-t">Wedding Ceremony</div>
+                <div class="b-d">A Hindu wedding, also known as Vivaha or Shaadi, is a grand and colorful ceremony filled with traditions symbolizing the union of two individuals and their families...</div>
+                        </div>
+        </div>
+        <div class="b">
+            <img src="2nd.png" alt="Engagement Ceremony">
+            <div class="b-c">
+                <div class="b-t">Engagement Ceremony</div>
+                <div class="b-d">In Indian weddings, the engagement ceremony marks the formal announcement of the couple's union and is often referred to as Roka or Sagai...</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="3d.png" alt="Haldi Ceremony">
+            <div class="b-c">
+                <div class="b-t">Haldi Ceremony</div>
+                <div class="b-d">The Haldi ceremony is a joyous and auspicious pre-wedding ritual in Indian weddings...</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="4th.png" alt="Mehendi Ceremony">
+            <div class="b-c">
+                <div class="b-t">Mehendi Ceremony</div>
+                <div class="b-d">The Mehendi ceremony is a vibrant and cherished pre-wedding tradition in Indian weddings, celebrated with joy and music...</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="5th.png" alt="Sangeet Ceremony">
+            <div class="b-c">
+                <div class="b-t">Sangeet Ceremony</div>
+                <div class="b-d">The Sangeet ceremony is a lively and entertaining pre-wedding celebration in Indian weddings, filled with music, dance, and joy...</div>
+            </div>
+        </div>
+        <div class="b">
+            <img src="6th.png" alt="Catering Services">
+            <div class="b-c">
+                <div class="b-t">Catering Services</div>
+                <div class="b-d">Catering plays a crucial role in Indian weddings, as food is central to the celebration and hospitality...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a  class="whatsapp-btn">
+        <img src="whatsapp-icon.png" alt="WhatsApp Icon">
+    </a>
+
+    <!-- QR Code -->
+    <div class="qr-code">
+        <img src="qr-code.jpg" alt="Scan QR Code">
+    </div>
+
+    <footer>
+        <div style="text-align:center">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="insta.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter">
+            </a>
+            <p>You can also contact us through the above social media apps</p>
+            <p>Designed by @Kalathuru Varshitha</p>
+        </div>
+    </footer>
+</body>
+</html>
